@@ -42,7 +42,7 @@ def gpd_bokeh(df):
 def main():
 
       # Read in LSOA shapefile
-    shp_link = "/Users/GeorgePyne/Desktop/Origin_Destination/Origin_Destination/PTAL/data/LSOA_2011_London_gen_MHW.shp"
+    shp_link = "LSOA_2011_London_gen_MHW.shp"
       # Set CRS for later mapping
     shp = gpd.read_file(shp_link, crs="+init=epsg:4326")
     shp = shp.to_crs(epsg=3857)
